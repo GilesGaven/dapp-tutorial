@@ -486,6 +486,7 @@ CryptoBeauty.deployed().then(function(instance) {instance.totalSupply.call().the
 
 好了, 本期的课程就到这里, 如果需要视频课程, 请扫描下面的二维码加入课程群.
 
-![群二维码]('./images/dapp_group2.jpg', '群二维码')
+![群二维码](./images/dapp_group2.jpeg)
+![老师个人微信](./images/michael_wechat.jpeg)
 
 
