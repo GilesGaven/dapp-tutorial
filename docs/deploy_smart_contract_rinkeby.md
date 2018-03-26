@@ -12,7 +12,7 @@
 ```
 geth  --rinkeby --rpc --rpcapi db,eth,net,web3,personal
 ```
-启动 mist, 并连接到 geth.
+启动 mist, 并连接到 geth. 这里需要注意在不同的系统上面, mist 和 rinkeby/geth.ipc 的路径会不同.
 ```
 /Applications/Mist.app/Contents/MacOS/Mist --rpc ~/Library/Ethereum/rinkeby/geth.ipc
 ```
