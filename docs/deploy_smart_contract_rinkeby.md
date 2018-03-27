@@ -4,7 +4,21 @@
 在前一篇文章中, 我们分享了如何创建智能合约并部署到 Ganache 区块链模拟器[链接](https://github.com/Michael-Jing/dapp-tutorial/blob/master/docs/create_and_deploy_cards_game.md), 本次我们接着上次的内容分享如何将智能合约部署到 Rinkeby 测试网, 当然也可以用这种方法来部署到以太坊主网. 
 # 环境准备
 - geth
+安装geth环境：
+```
+$ sudo add-apt-repository -y ppa:ethereum/ethereum
+$ sudo apt-get update
+$ sudo apt-get install ethereum
+```
+检查是否成功
+```
+$ geth version
+Geth
+Version: xxx
+```
 - Mist
+安装 Mist,可前往(https://github.com/ethereum/mist/releases)下载，下载解压后用就行了.
+
 - truffle
 
 # 开始部署
@@ -31,7 +45,7 @@ geth  --rinkeby --rpc --rpcapi db,eth,net,web3,personal --unlock "0x03fd8c397Bd9
      // See <http://truffleframework.com/docs/advanced/configuration>
      // for more about customizing your Truffle configuration!
      networks: {
-        development: {
+        dev: {
         host: "127.0.0.1",
          port: 7545,
          network_id: "*" // Match any network id
